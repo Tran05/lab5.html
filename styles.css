@@ -1,0 +1,326 @@
+/* General reset and font */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 2000px; 
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000000; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin: 0;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #f4f1f1; 
+    margin-bottom: 10px; 
+}
+
+.header p {
+    font-size: 0.9rem; 
+    color: #f8f6f6; 
+}
+
+.header a {
+    color: #f5f7fa; 
+    text-decoration: none; 
+}
+
+.header a:hover {
+    color: #e0e0e0; 
+    text-decoration: underline; 
+}
+
+.header span {
+    color: #f5f7fa; 
+    margin: 0 5px;
+}
+
+
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    background-color: #0e0f0f; 
+    padding: 10px; 
+   
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0; 
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0073e6;
+    border-radius: 5px;
+    transition: width 0.3s ease; 
+}
+.navbar button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #005bb5;
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sort-filter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sort-filter label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.sort-filter select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    background-color: #0073e6;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #005bb5;
+}
+.courses {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-auto-rows: auto; 
+    gap: 10px; 
+    justify-content: start;
+}
+
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+    aspect-ratio: 1 / 1; 
+    font-weight: 400;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height:150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.course-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.rating {
+    margin-top: 5px; 
+    font-size: 1rem; 
+    color: #ffdd00;
+    float: right;
+    
+}
+    .rating span {
+        color: #ffdd00;
+        
+
+}
+.rating-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+    
+}
+
+
+.rating-btn:hover {
+    background-color: #005bb5; 
+    
+}
+
+/* Learning Paths */
+.learning-paths {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: auto; 
+    gap: 10px; 
+    justify-content: start; 
+    margin-top: 20px; 
+}
+
+.learning-card {
+    background-color: #fff; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+}
+
+.learning-card:hover {
+    transform: translateY(-5px); 
+}
+
+.learning-card .progress-bar {
+    height: 4px;
+    background-color: #ddd; 
+    margin-top: 4px; 
+    border-radius: 4px; 
+}
+
+.learning-card .progress {
+    height: 100%; 
+    background-color: rgb(0, 4, 255); 
+}
+
+
+
+
+/* Tab content */
+.tab-content {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+nav {
+    background-color: #000000;
+   
+    border: 2px solid #000000;
+  
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #3300ff;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sort-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+    
+}
